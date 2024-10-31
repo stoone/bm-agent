@@ -1,0 +1,12 @@
+[Unit]
+Description=bm agent
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/cg/bm/bm-agent & -ak 8sm4089971ha8cdsakvu -sk D15A9D02FEB89AE656A105505D1DBE3BF85BA9A5B6BAF0410B97A95F33E8D33EA14231013296BA3810C995DBB1A327263D7038506100BBB13D79517A39D3736F9A0A12E42F41A58DFA3AA63D2889C151 -serverName nxz -home /home/nxz
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
